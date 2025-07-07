@@ -185,7 +185,11 @@ li {
     height: 800px;
 }
 img {
-    width: 30px;
-    height: 15px;
+    width: 50%;
+    height: 50%;
     object-fit: cover;
 }
+
+
+
+
