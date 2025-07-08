@@ -1,11 +1,11 @@
 @charset "UFT-8";
 
 * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
     font-size: 0.875rem;
     min-height: 100vh;
     background-color: #000;
-    
+
 }
 
 a {
@@ -34,6 +34,7 @@ li {
     max-width: 1920px;
     margin: 0 auto;
     padding: 0 40px;
+    margin-top: 10px;
 }
 
 
@@ -46,7 +47,6 @@ li {
 #header {
     font-family: "neue-haas-grotesk-display", sans-serif;
     font-weight: 200;
-    /*font-style: normal;*/
     width: 100%;
     height: 60px;
     background-color: #000;
@@ -54,9 +54,6 @@ li {
     align-items: center;
     justify-content: space-between;
     position: relative;
-    /*left: 0;
-    right: 0;
-    z-index: 10;*/
 }
 
 /*ハンバーガーメニュー*/
@@ -178,18 +175,180 @@ li {
     text-decoration: none;
 }
 
+#scloll {
+    display: flex;
+    text-align: center;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sita {
+    font-weight: 700;
+    writing-mode: vertical-rl;
+}
 
 
-#img1 {
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* 自動で列数調整 */
+    gap: 16px;
+    /* 各画像の間隔 */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 100px;
+    /* 上部の余白 */
+    padding-bottom: 100px;
+    /* 下部の余白 */
+}
+
+.grid-container img {
     width: 100%;
-    height: 800px;
-}
-img {
-    width: 50%;
-    height: 50%;
+    height: auto;
+    border-radius: 8px;
     object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#footer {
+    width: 100%;
+    height: 40px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+}
+
+.howto-container {
+    display: flex;
+    align-items: center;
+    /* 縦位置を中央に */
+    gap: 20px;
+    /* 画像と文字の間隔 */
+    padding: 40px;
+}
+
+.howto-image {
+    max-width: 50%;
+    /* 写真の幅 */
+    height: auto;
+    border-radius: 10px;
+    /* 角を丸くしたい場合 */
+}
+
+.text {
+    width: 600px;
+    font-size: 16px;
+    line-height: 1.5;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+
+.about-text {
+    font-family: "norman-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #ffffff;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px 4%;
+    margin-top: 100px;
+}
+
+
+#profile p {
+    font-family: "norman-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+}
+
+#profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.content-title {
+    font-family: "hiragino-kaku-gothic-pron", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.content .profile-text {
+    font-family: "hiragino-kaku-gothic-pron", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: left;
+    margin-left: 100px;
+}
+
+.SNS a {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: "norman-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+    font-size: 1rem;
+    text-decoration: none;
 }
 
 
 
 
+@media screen and (max-width: 768px) {
+    .wrapper {
+        padding: 0 20px;
+    }
+
+    #header {
+        height: 50px;
+    }
+
+    #navi {
+        width: 250px;
+        padding: 30px 40px;
+    }
+
+    .toggle_btn {
+        width: 25px;
+        height: 25px;
+    }
+
+    .toggle_btn span {
+        width: 25px;
+        height: 2px;
+    }
+
+    #img1 {
+        height: 500px;
+    }
+
+    .text {
+        font-size: 14px;
+        width: 180px;
+    }
+}
