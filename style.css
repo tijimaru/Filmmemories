@@ -224,13 +224,17 @@ li {
     display: flex;
     align-items: center;
     /* 縦位置を中央に */
+    justify-content: center;
+    /* 横位置を中央に */
+    flex-direction: row;
+    /* 横並びにする */
     gap: 20px;
     /* 画像と文字の間隔 */
     padding: 40px;
 }
 
 .howto-image {
-    max-width: 50%;
+    max-width: 30%;
     /* 写真の幅 */
     height: auto;
     border-radius: 10px;
@@ -250,11 +254,11 @@ li {
 .about-text {
     font-family: "norman-variable", sans-serif;
     font-variation-settings: 'wght' 400;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
-    line-height: 1.6;
+    line-height: 4;
     color: #ffffff;
     margin-top: 100px;
     margin-bottom: 30px;
