@@ -280,7 +280,7 @@ li {
 #profile p {
     font-family: "norman-variable", sans-serif;
     font-variation-settings: 'wght' 400;
-    font-size: 1rem;
+    font-size: 0.75rem;
     line-height: 1.6;
     color: #ffffff;
     margin-bottom: 30px;
@@ -319,7 +319,7 @@ li {
     color: #ffffff;
     font-family: "norman-variable", sans-serif;
     font-variation-settings: 'wght' 400;
-    font-size: 1rem;
+    font-size: 0.75rem;
     text-decoration: none;
 }
 
@@ -388,7 +388,7 @@ li {
     #profile p {
         font-family: "norman-variable", sans-serif;
         font-variation-settings: 'wght' 400;
-        font-size: 1rem;
+        font-size: 0.75rem;
         line-height: 1.6;
         color: #ffffff;
         margin-bottom: 30px;
