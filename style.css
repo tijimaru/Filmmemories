@@ -242,8 +242,9 @@ li {
 }
 
 .text {
-    font-family: "norman-variable", sans-serif;
-    font-variation-settings: 'wght' 400;
+    font-family: "hiragino-kaku-gothic-pron", sans-serif;
+    font-weight: 600;
+    font-style: normal;
     font-size: 1rem;;
     width: 600px;
     font-size: 16px;
