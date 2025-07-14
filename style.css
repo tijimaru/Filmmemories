@@ -346,7 +346,7 @@ li {
 
     .toggle_btn {
         width: 25px;
-        height: 25px;
+        /*height: 25px;*/
     }
 
     .toggle_btn span {
